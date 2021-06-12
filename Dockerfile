@@ -13,7 +13,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 # Install softethervpn server on ubuntu ppa
 RUN apt update && \
 apt upgrade -y && \
-apt install software-properties-common && \
+apt install -y software-properties-common && \
 apt-add-repository -y ppa:paskal-07/softethervpn && \
 apt update && \
 apt install -y softether-vpnserver && \
